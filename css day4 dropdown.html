@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        ul{
+            list-style: none;
+            background-color:cornflowerblue
+            
+        }
+        ul li a{
+            display:block;
+            padding:20px 25px;
+            text-decoration: none;
+            text-align: center;
+            width:50%;
+
+        }
+        ul li ul.dropdown li{
+            display: block;
+        }
+        ul li ul.dropdown{
+            width:50%;
+            background-color:cornflowerblue;
+            position: absolute;
+            z-index:999;
+            display:none;
+            text-align: center;
+        }
+
+        ul li a:focus{
+            background-color: antiquewhite;
+            
+        }
+        ul li:hover ul.dropdown{
+            display:block;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Languages</a>
+        <ul class="dropdown">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JAVA SCRIPT</a></li>
+            <li><a href="#">REACT</a></li>
+            <li><a href="#">ANGULAR</a></li>
+            </ul>
+</li>
+        </ul>
+
+    
+</body>
+</html>
